@@ -1,3 +1,5 @@
+import logging
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_user import UserManager
@@ -13,6 +15,8 @@ migrate = Migrate(app, db, render_as_batch=True)
 login_manager = LoginManager()
 login_manager.login_view = 'app.login'
 login_manager.init_app(app)
+
+logging.basicConfig(level=logging.ERROR)
 
 from app.models import User
 
