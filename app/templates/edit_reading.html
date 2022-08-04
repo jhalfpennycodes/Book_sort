@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="" method="post" name="add reading">
+        {{ form.hidden_tag() }}
+        <div>
+            <h2>Edit a reading:</h2>
+        </div>
+        <div>
+            <h6>Title:</h6>
+            <p>{{ form.title }}</p>
+            <h6>Author:</h6>
+            <p>{{ form.author }}</p>
+            <h6>Completed:</h6>
+            <p>{{ form.completed }}</p>
+            <h6>Rating:</h6>
+            <p>{{ form.rating }}</p>
+            <br>
+            <p><input type="submit" value="Edit reading"></p>
+        </div>
+    </form>
+{% endblock %}

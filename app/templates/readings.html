@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Readings</h2>
+
+    <style>table, th, td { border: 1px solid black;}</style>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Rating</th>
+              <th>Completed</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            {% for reading in user.reading %}
+                <tr>
+                    <td>{{reading.title}}</td>
+                    <td>{{reading.author}}</td>
+                    <td>{{reading.rating}}</td>
+                    <td><a href={{ url_for('complete_reading', id=reading.id) }}><input type="submit" value="Mark as complete" class="btn btn-primary"></input></a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p><a href={{ url_for('home_page') }}>Home page</a></p>
+
+{% endblock %}

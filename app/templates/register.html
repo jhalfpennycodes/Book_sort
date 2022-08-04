@@ -1,0 +1,27 @@
+{% extends "login_base.html" %}
+
+{% block content %}
+    <div>
+        <h2>Registration:</h2>
+    </div>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="notification is-danger">
+            {{ messages[0] }} Go to <a href="{{ url_for('login') }}">login page</a>.
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form action="" method="POST" name="register">
+        {{ form.hidden_tag() }}
+        <div>
+            <h6>Username:</h6>
+            <p>{{ form.username }}</p>
+            <h6>Password:</h6>
+            <p>{{ form.password }}</p>
+            <h6>Name:</h6>
+            <p>{{ form.name }}</p>
+            <br>
+            <p><input type="submit" value="Register"></p>
+        </div>
+    </form>
+{% endblock %}
