@@ -16,7 +16,8 @@ login_manager = LoginManager()
 login_manager.login_view = 'app.login'
 login_manager.init_app(app)
 
-logging.basicConfig(level=logging.ERROR)
+logging.basicConfig(filename='web-app.log', encoding='utf-8', level=logging.DEBUG)
+
 
 from app.models import User
 

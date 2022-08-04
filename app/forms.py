@@ -10,7 +10,7 @@ class LoginForm(Form):
 
 class RegisterForm(Form):
     username = StringField('username', validators=[validators.InputRequired(), validators.Length(min=4, max=20)])
-    password = PasswordField('password', validators=[validators.InputRequired(), validators.Length(min=6, max=20)])
+    password = PasswordField('password', validators=[validators.InputRequired(), validators.Length(min=3, max=20)])
     name = StringField('name')
 
 
