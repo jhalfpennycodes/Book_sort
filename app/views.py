@@ -27,9 +27,11 @@ def login():
 
             if user and check_password_hash(user.password, password):
                 login_user(user, remember=remember)
+                app.logger.info('%s logged in successfully', user.username)
                 return redirect(url_for('library'))
             else:
                 flash('Username or password is incorrect, please try again.\n')
+                app.logger.info('%s failed to log in', user.username)
                 return redirect(url_for('login'))
         except Exception as e:
             flash('Username or password is incorrect, please try again.\n')
