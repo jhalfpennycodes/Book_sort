@@ -1,0 +1,19 @@
+{% extends "login_base.html" %}
+
+{% block content %}
+<p></p>
+<div>
+    <h2>BookSort Home page</h2>
+</div>
+<p></p>
+<div>
+    <h4> Keep track of your readings here!</h4>
+</div>
+    <img src="{{ url_for('static', filename='images/bookstack.jpeg') }}" alt="Stacked books">
+<p></p>
+    <h6> Click here to sign in:</h6>
+    <p><a href={{ url_for('login') }}>Login</a></p>
+<p></p>
+    <h6>Need an account ? Register here:</h6>
+    <p><a href={{ url_for('register') }}>Register</a></p>
+{% endblock %}

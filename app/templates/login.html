@@ -1,0 +1,30 @@
+{% extends "login_base.html" %}
+
+{% block content %}
+    <div>
+        <h2>Login:</h2>
+    </div>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="notification is-danger">
+            {{ messages[0] }}
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form action="login" method="POST" name="login">
+        {{ form.hidden_tag() }}
+        <div>
+            <h6>Username:</h6>
+            <p>{{ form.username }}</p>
+            <h6>Password:</h6>
+            <p>{{ form.password }}</p>
+            <br>
+            <label class="checkbox">
+                <input type="checkbox">
+                    Remember me
+            </label>
+            <br>
+            <p><input type="submit" value="Login"></p>
+        </div>
+    </form>
+{% endblock %}
