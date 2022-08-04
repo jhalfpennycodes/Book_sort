@@ -2,6 +2,8 @@ import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+
+
 # Flask settings
 SECRET_KEY = 'This is an INSECURE secret!! DO NOT use this in production!!'
 
