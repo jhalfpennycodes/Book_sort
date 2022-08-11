@@ -6,3 +6,60 @@ INFO:werkzeug:127.0.0.1 - - [04/Aug/2022 15:44:25] "GET /static/images/bookstack
 INFO:werkzeug:127.0.0.1 - - [04/Aug/2022 15:44:40] "GET /login HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [04/Aug/2022 15:44:40] "GET /static/css/style.css HTTP/1.1" 200 -
 DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:08] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:08] "GET /static/images/bookstack.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:app:user logged in successfully
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:17] "GET /library HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:21] "GET /readings HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:22] "[32mGET /complete_reading/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:22] "GET /readings HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:23] "GET /add_book HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:38] "[32mPOST /add_book HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:38] "GET /library HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:43] "[32mGET /add_to_readings/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:43] "GET /readings HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:48] "[32mGET /complete_reading/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:48] "GET /readings HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:51] "GET /add_book HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:21:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:22:04] "GET /library HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Aug/2022 12:22:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:14] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:14] "GET /static/images/bookstack.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:app:user logged in successfully
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:24] "GET /library HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:29] "[32mGET /add_to_readings/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:29] "GET /readings HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:32] "GET /add_book HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:33] "GET /library HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:35] "[32mGET /add_to_readings/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:35] "GET /readings HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:37] "[32mGET /complete_reading/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:38] "GET /readings HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2022 19:44:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
