@@ -1,22 +1,20 @@
-{% extends "base.html" %}
-
-{% block content %}
-    <form action="" method="post" name="add reading">
-        {{ form.hidden_tag() }}
-        <div>
-            <h2>Add a book to the library:</h2>
-        </div>
-        <div>
-            <h6>Title:</h6>
-            <p>{{ form.title }}</p>
-            <h6>Author:</h6>
-            <p>{{ form.author }}</p>
-            <h6>Description:</h6>
-            <p>{{ form.description }}</p>
-            <h6>Rating:</h6>
-            <p>{{ form.rating }}</p>
-            <br>
-            <p><input type="submit" value="Add reading"></p>
-        </div>
-    </form>
+{% extends "base.html" %} {% block content %}
+<form action="" method="post" name="add reading">
+  {{ form.hidden_tag() }}
+  <div>
+    <h2>Add a book to the library:</h2>
+  </div>
+  <div>
+    <h6>Title:</h6>
+    <p>{{ form.title }}</p>
+    <h6>Author:</h6>
+    <p>{{ form.author }}</p>
+    <h6>Description:</h6>
+    <p>{{ form.description }}</p>
+    <h6>Rating:</h6>
+    <p>{{ form.rating }}</p>
+    <br />
+    <p><input type="submit" value="Add book" /></p>
+  </div>
+</form>
 {% endblock %}
